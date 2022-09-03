@@ -1,0 +1,44 @@
+block chain uses hashing, this hashing creates unique hash codes for every block,
+each block has it's own data which comprises of columns like 
+*Block number
+1> NONCE
+2>data
+3>Prev
+4>hash
+
+Now each block has subblocks
+and these blocks are distributed(Copied) on many systems at the same time,so alteration can affect the validity of blocks
+
+Blocks also have a token column where each (token column)tx: represents a ledger(transactions of money)
+
+The smart contracts is put in this data section is used !
+
+The question is how you put in the money in the system and validation
+
+so first two terms that we need to learn
+1> Private key  :"Only known to the key holder, is used to sign transactions"
+
+2> Public key   :"Used to verify the transactions"
+
+You make a transaction , sign it , with your public key, and the transaction  is passed on to the other blocks with a signature.
+Eth uses (Elleptical Curve Digital Signature Algorithm) .
+This signature can verify that it is from you , by verifying your public key,you cant derive private key from this.
+
+This is how a transactions work in a blockchain. 
+And these peers or nodes in a block chain with instances of your transactions verify it thus taking a little from the transactions (Gas) in etherium
+to do this.
+
+
+/////////////////////////////////////
+Yotube link and Wikipedia
+
+https://en.wikipedia.org/wiki/SHA-2
+https://www.bing.com/ck/a?!&&p=e5b751e43a147637JmltdHM9MTY2MjE2MzIwMCZpZ3VpZD0yM2NhYzIzNy1lM2E3LTYxODAtMGM1NC1kM2FiZTIzYzYwZTgmaW5zaWQ9NTI1Ng&ptn=3&hsh=3&fclid=23cac237-e3a7-6180-0c54-d3abe23c60e8&u=a1aHR0cHM6Ly93d3cuc2ltcGxpbGVhcm4uY29tL3R1dG9yaWFscy9jeWJlci1zZWN1cml0eS10dXRvcmlhbC9zaGEtMjU2LWFsZ29yaXRobQ&ntb=1
+part1 blockchain visualization-> https://www.youtube.com/watch?v=_160oMzblY8&t=4s
+                          part2->https://www.youtube.com/watch?v=xIDL_akeras&t=311s
+
+With this there are few terms like Oracles that are data of these blocks
+Smart Contracts
+will cover it on DAY2...
+
+
